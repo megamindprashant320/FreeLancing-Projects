@@ -50,7 +50,7 @@ More website demos and web development projects will be added here as they are c
 
 Available for freelance web development projects.
 
-**GitHub:** https://github.com/YOUR-USERNAME
+**GitHub:** https://github.com/megamindprashant320
 
 ---
 
