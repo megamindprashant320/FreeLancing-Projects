@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore burgers, pizzas, sides and coffee at Brew & Bite Café."
+    />
+    <title>Our Menu | Brew & Bite</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="index.html" class="logo">
+        brew<span>&</span>bite<span class="logo-dot">.</span>
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="primary-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="menu.html" aria-current="page">Explore Menu</a>
+        <a href="contact.html" class="nav-cta">Visit Us ↗</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- MENU HERO -->
+      <section class="menu-page-hero">
+        <div class="menu-hero-content">
+          <p class="eyebrow">FRESH FLAVOURS. HAPPY MOMENTS.</p>
+          <h1>THE GOOD<br /><em>STUFF.</em></h1>
+          <p>
+            From comforting classics to little indulgences, find something worth
+            craving.
+          </p>
+          <a href="#food-menu" class="btn">Explore the Menu ↓</a>
+        </div>
+
+        <div class="menu-hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=900&auto=format&fit=crop&q=85"
+            alt="Fresh gourmet burger"
+          />
+          <span class="menu-hero-badge">GOOD FOOD<br />GOOD MOOD ✦</span>
+        </div>
+      </section>
+
+      <!-- MENU ITEMS -->
+      <section id="food-menu" class="food-menu-section">
+        <div class="food-menu-heading">
+          <p class="eyebrow">HANDPICKED FOR YOUR CRAVINGS</p>
+          <h2>Find Your <em>Favourite.</em></h2>
+          <p>Delicious bites, comforting flavours and refreshing sips.</p>
+        </div>
+
+        <div class="menu-filters" role="group" aria-label="Filter menu items">
+          <button
+            class="filter-btn active"
+            type="button"
+            data-filter="all"
+            aria-pressed="true"
+          >
+            All Items
+          </button>
+          <button
+            class="filter-btn"
+            type="button"
+            data-filter="burgers"
+            aria-pressed="false"
+          >
+            Burgers
+          </button>
+          <button
+            class="filter-btn"
+            type="button"
+            data-filter="pizza"
+            aria-pressed="false"
+          >
+            Pizza
+          </button>
+          <button
+            class="filter-btn"
+            type="button"
+            data-filter="sides"
+            aria-pressed="false"
+          >
+            Sides
+          </button>
+          <button
+            class="filter-btn"
+            type="button"
+            data-filter="drinks"
+            aria-pressed="false"
+          >
+            Drinks
+          </button>
+        </div>
+
+        <div class="full-menu-grid">
+          <article class="full-menu-card" data-category="burgers">
+            <div class="full-menu-image">
+              <img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700&auto=format&fit=crop&q=85"
+                alt="Classic Smash Burger"
+                loading="lazy"
+              />
+              <span class="menu-item-badge">BESTSELLER</span>
+            </div>
+            <div class="full-menu-info">
+              <div class="full-menu-title">
+                <h3>Classic Smash Burger</h3>
+                <strong>₹149</strong>
+              </div>
+              <p>Juicy patty, melted cheese and signature sauce.</p>
+              <a
+                href="contact.html?item=Classic%20Smash%20Burger"
+                class="order-link"
+                >Enquire Now ↗</a
+              >
+            </div>
+          </article>
+
+          <article class="full-menu-card" data-category="burgers">
+            <div class="full-menu-image">
+              <img
+                src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=700&auto=format&fit=crop&q=85"
+                alt="Double Cheese Burger"
+                loading="lazy"
+              />
+            </div>
+            <div class="full-menu-info">
+              <div class="full-menu-title">
+                <h3>Double Cheese Burger</h3>
+                <strong>₹199</strong>
+              </div>
+              <p>Double the cheese, double the deliciousness.</p>
+              <a
+                href="contact.html?item=Double%20Cheese%20Burger"
+                class="order-link"
+                >Enquire Now ↗</a
+              >
+            </div>
+          </article>
+
+          <article class="full-menu-card" data-category="pizza">
+            <div class="full-menu-image">
+              <img
+                src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=700&auto=format&fit=crop&q=85"
+                alt="Farmhouse Pizza"
+                loading="lazy"
+              />
+              <span class="menu-item-badge">POPULAR</span>
+            </div>
+            <div class="full-menu-info">
+              <div class="full-menu-title">
+                <h3>Farmhouse Pizza</h3>
+                <strong>₹249</strong>
+              </div>
+              <p>Fresh veggies, mozzarella and golden crust.</p>
+              <a href="contact.html?item=Farmhouse%20Pizza" class="order-link"
+                >Enquire Now ↗</a
+              >
+            </div>
+          </article>
+
+          <article class="full-menu-card" data-category="pizza">
+            <div class="full-menu-image">
+              <img
+                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=700&auto=format&fit=crop&q=85"
+                alt="Cheese Burst Pizza"
+                loading="lazy"
+              />
+            </div>
+            <div class="full-menu-info">
+              <div class="full-menu-title">
+                <h3>Cheese Burst Pizza</h3>
+                <strong>₹299</strong>
+              </div>
+              <p>Rich tomato sauce and an extra cheesy finish.</p>
+              <a
+                href="contact.html?item=Cheese%20Burst%20Pizza"
+                class="order-link"
+                >Enquire Now ↗</a
+              >
+            </div>
+          </article>
+
+          <article class="full-menu-card" data-category="sides">
+            <div class="full-menu-image">
+              <img
+                src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=700&auto=format&fit=crop&q=85"
+                alt="Crispy French Fries"
+                loading="lazy"
+              />
+            </div>
+            <div class="full-menu-info">
+              <div class="full-menu-title">
+                <h3>Classic French Fries</h3>
+                <strong>₹99</strong>
+              </div>
+              <p>Golden, crispy and lightly seasoned.</p>
+              <a
+                href="contact.html?item=Classic%20French%20Fries"
+                class="order-link"
+                >Enquire Now ↗</a
+              >
+            </div>
+          </article>
+
+          <article class="full-menu-card" data-category="sides">
+            <div class="full-menu-image">
+              <img
+                src="https://images.unsplash.com/photo-1548340748-6d2b7d7da280?w=700&auto=format&fit=crop&q=85"
+                alt="Cheesy Garlic Bread"
+                loading="lazy"
+              />
+            </div>
+            <div class="full-menu-info">
+              <div class="full-menu-title">
+                <h3>Cheesy Garlic Bread</h3>
+                <strong>₹129</strong>
+              </div>
+              <p>Toasted bread with garlic butter and cheese.</p>
+              <a
+                href="contact.html?item=Cheesy%20Garlic%20Bread"
+                class="order-link"
+                >Enquire Now ↗</a
+              >
+            </div>
+          </article>
+
+          <article class="full-menu-card" data-category="drinks">
+            <div class="full-menu-image">
+              <img
+                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=700&auto=format&fit=crop&q=85"
+                alt="Signature Cold Coffee"
+                loading="lazy"
+              />
+              <span class="menu-item-badge">CAFÉ FAVOURITE</span>
+            </div>
+            <div class="full-menu-info">
+              <div class="full-menu-title">
+                <h3>Signature Cold Coffee</h3>
+                <strong>₹129</strong>
+              </div>
+              <p>Rich coffee, chilled milk and creamy texture.</p>
+              <a
+                href="contact.html?item=Signature%20Cold%20Coffee"
+                class="order-link"
+                >Enquire Now ↗</a
+              >
+            </div>
+          </article>
+
+          <article class="full-menu-card" data-category="drinks">
+            <div class="full-menu-image">
+              <img
+                src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=700&auto=format&fit=crop&q=85"
+                alt="Fresh Cappuccino"
+                loading="lazy"
+              />
+            </div>
+            <div class="full-menu-info">
+              <div class="full-menu-title">
+                <h3>Classic Cappuccino</h3>
+                <strong>₹119</strong>
+              </div>
+              <p>Fresh espresso topped with silky milk foam.</p>
+              <a
+                href="contact.html?item=Classic%20Cappuccino"
+                class="order-link"
+                >Enquire Now ↗</a
+              >
+            </div>
+          </article>
+        </div>
+
+        <p class="menu-disclaimer">
+          Demo menu and indicative prices. Final items and prices will be
+          updated for the actual café.
+        </p>
+      </section>
+
+      <!-- MENU CTA -->
+      <section class="menu-bottom-cta">
+        <p class="eyebrow">SOMETHING GOOD IS WAITING</p>
+        <h2>YOUR NEXT CRAVING<br /><em>STARTS HERE.</em></h2>
+        <p>Have a question about our menu? We'd love to hear from you.</p>
+        <a href="contact.html" class="btn">Get in Touch ↗</a>
+      </section>
+    </main>
+
+    <!-- SHARED FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"
+            >brew<span>&</span>bite<span class="logo-dot">.</span></a
+          >
+          <p>
+            Fresh flavours, warm conversations and little moments worth sharing.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Explore</h3>
+          <a href="index.html">Home</a>
+          <a href="about.html">Our Story</a>
+          <a href="menu.html">Our Menu</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-links">
+          <h3>Discover</h3>
+          <a href="menu.html">Best Sellers</a>
+          <a href="menu.html">Special Combos</a>
+          <a href="contact.html">Visit Us</a>
+        </div>
+
+        <div class="footer-connect">
+          <h3>Stay Connected</h3>
+          <p>Follow our journey, one bite at a time.</p>
+          <div class="footer-socials">
+            <span>Instagram · Coming Soon</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Brew & Bite. All rights reserved.</p>
+        <p>Made with love & a little extra coffee ☕</p>
+      </div>
+    </footer>
+  </body>
+</html>

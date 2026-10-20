@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get in touch with Brew & Bite Café. Ask about our menu, find us, or send an enquiry."
+    />
+    <title>Contact Us | Brew & Bite</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="index.html" class="logo">
+        brew<span>&</span>bite<span class="logo-dot">.</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="primary-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="menu.html">Explore Menu</a>
+        <a href="contact.html" class="nav-cta" aria-current="page"
+          >Visit Us ↗</a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <!-- CONTACT HERO -->
+      <section class="contact-page-hero">
+        <p class="eyebrow">WE'D LOVE TO HEAR FROM YOU</p>
+        <h1>LET'S TALK<br /><em>OVER COFFEE.</em></h1>
+        <p>
+          Have a question, a craving or just want to say hello? We're always
+          happy to connect.
+        </p>
+      </section>
+
+      <!-- CONTACT FORM + INFORMATION -->
+      <section class="contact-main">
+        <div class="contact-intro">
+          <p class="eyebrow">DROP US A MESSAGE</p>
+          <h2>Good Conversations<br /><em>Start Here.</em></h2>
+          <p>
+            Tell us what's on your mind. Whether it's a menu enquiry or a
+            special request, we'd love to hear it.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <span class="contact-detail-icon">✉</span>
+              <div>
+                <h3>Email</h3>
+                <p>Contact email coming soon</p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <span class="contact-detail-icon">⌖</span>
+              <div>
+                <h3>Location</h3>
+                <p>Location to be announced</p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <span class="contact-detail-icon">◷</span>
+              <div>
+                <h3>Opening Hours</h3>
+                <p>Hours to be announced</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <div class="form-heading">
+            <span class="form-decor">✦</span>
+            <h3>Send an Enquiry</h3>
+            <p>Fill in the details and prepare your message.</p>
+          </div>
+
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="customerName">Your Name *</label>
+                <input
+                  type="text"
+                  id="customerName"
+                  name="name"
+                  placeholder="Enter your name"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="customerEmail">Email Address *</label>
+                <input
+                  type="email"
+                  id="customerEmail"
+                  name="email"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="enquiryType">Enquiry Type</label>
+              <select id="enquiryType" name="enquiryType">
+                <option value="General Enquiry">General Enquiry</option>
+                <option value="Menu Enquiry">Menu Enquiry</option>
+                <option value="Special Request">Special Request</option>
+                <option value="Feedback">Feedback</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="selectedItem">Menu Item (Optional)</label>
+              <input
+                type="text"
+                id="selectedItem"
+                name="selectedItem"
+                placeholder="Select from menu or enter an item"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="customerMessage">Your Message *</label>
+              <textarea
+                id="customerMessage"
+                name="message"
+                rows="5"
+                placeholder="Tell us how we can help..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="contact-submit">
+              Prepare Email Enquiry ↗
+            </button>
+
+            <p class="form-note">
+              This demo opens your email application to send the enquiry. No
+              information is stored on this website.
+            </p>
+
+            <p
+              id="formStatus"
+              class="form-status"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </section>
+
+      <!-- VISIT DETAILS -->
+      <section class="contact-visit">
+        <div class="contact-visit-photo">
+          <img
+            src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1100&auto=format&fit=crop&q=85"
+            alt="Warm restaurant interior with comfortable seating"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="contact-visit-content">
+          <p class="eyebrow">MAKE YOURSELF AT HOME</p>
+          <h2>YOUR CORNER.<br /><em>YOUR COMFORT.</em></h2>
+          <p>
+            Great coffee, comforting bites and the perfect atmosphere for
+            catching up with friends.
+          </p>
+
+          <div class="contact-visit-note">
+            <strong>Find Us</strong>
+            <span
+              >Address and map directions will be added when the café location
+              is confirmed.</span
+            >
+          </div>
+
+          <a href="menu.html" class="btn">Explore Our Menu ↗</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            brew<span>&</span>bite<span class="logo-dot">.</span>
+          </a>
+          <p>
+            Fresh flavours, warm conversations and little moments worth sharing.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Explore</h3>
+          <a href="index.html">Home</a>
+          <a href="about.html">Our Story</a>
+          <a href="menu.html">Our Menu</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-links">
+          <h3>Discover</h3>
+          <a href="menu.html">Best Sellers</a>
+          <a href="menu.html">Special Combos</a>
+          <a href="contact.html">Visit Us</a>
+        </div>
+
+        <div class="footer-connect">
+          <h3>Stay Connected</h3>
+          <p>Follow our journey, one bite at a time.</p>
+          <div class="footer-socials">
+            <span>Instagram · Coming Soon</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Brew & Bite. All rights reserved.</p>
+        <p>Made with love & a little extra coffee ☕</p>
+      </div>
+    </footer>
+  </body>
+</html>
