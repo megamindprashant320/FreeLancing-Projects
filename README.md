@@ -20,7 +20,7 @@ A modern, responsive café website designed to showcase food items, introduce th
 
 **Technologies:** HTML5, CSS3, JavaScript
 
-**Live Demo:** https://YOUR-USERNAME.github.io/Freelancing-Projects/
+**Live Demo:** https://megamindprashant320.github.io/FreeLancing-Projects/
 
 **Source Code:** [Brew & Bite](./Brew-and-Bite/)
 
