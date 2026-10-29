@@ -165,6 +165,7 @@ function initCinematicHero() {
     }
 
     // Reduced motion keeps a complete, static garden without scrubbing media.
+    heroSection.classList.toggle('hero-is-scrubbing', currentProgress > 0.025 && !staticScene);
     const visualProgress = staticScene ? 1 : currentProgress;
     if (layerPlanters) layerPlanters.classList.toggle('phase-active', visualProgress >= 0.18);
     if (layerBranches) layerBranches.classList.toggle('phase-active', visualProgress >= 0.36);
@@ -238,7 +239,7 @@ function initBeforeAfterSlider() {
     const clamped = Math.max(0, Math.min(100, percentage));
     currentPercentage = clamped;
 
-    afterView.style.width = `${clamped}%`;
+    afterView.style.clipPath = `inset(0 ${100 - clamped}% 0 0)`;
     handle.style.left = `${clamped}%`;
     handle.setAttribute('aria-valuenow', Math.round(clamped));
   }
