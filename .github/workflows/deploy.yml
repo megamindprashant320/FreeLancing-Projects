@@ -29,11 +29,16 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
+      
       - name: Prepare websites
         run: |
           mkdir -p _site/Casa-Green-Indoor-Artificial-Gardening
+          mkdir -p _site/Casa-Greens-Indoor-Gardening
+
           cp -a Brew-and-Bite/. _site/
           cp -a Casa-Green-Indoor-Artificial-Gardening/. _site/Casa-Green-Indoor-Artificial-Gardening/
+          cp -a Casa-Greens-Indoor-Gardening/. _site/Casa-Greens-Indoor-Gardening/
+
 
       - name: Upload websites
         uses: actions/upload-pages-artifact@v3
