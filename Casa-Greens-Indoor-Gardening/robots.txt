@@ -1,0 +1,5 @@
+# This project-subpath file is not the origin-root robots policy.
+# Root policy belongs at https://megamindprashant320.github.io/robots.txt (owner-managed).
+User-agent: *
+Allow: /
+Sitemap: https://megamindprashant320.github.io/FreeLancing-Projects/Casa-Greens-Indoor-Gardening/sitemap.xml
